@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crack</title>
+</head>
+<body>
+
+<script src="wasm_exec.js"></script>
+<script type="text/javascript">
+    (async () => {
+        const go = new Go();
+        const response = await fetch("main.wasm");
+        const bytes = await response.arrayBuffer();
+        const { instance } = await WebAssembly.instantiate(bytes, go.importObject);
+        await go.run(instance);
+    })();
+</script>
+</body>
+</html>
