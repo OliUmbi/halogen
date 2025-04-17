@@ -29,8 +29,15 @@ func (component *Component) SetText(text string) {
 }
 
 func (component *Component) OnClick(callback func()) {
-	component.reference.Set("onclick", js.FuncOf(func(js.Value, []js.Value) interface{} {
+	component.reference.Set("onclick", js.FuncOf(func(this js.Value, args []js.Value) interface{} {
 		callback()
+		return nil
+	}))
+}
+
+func (component *Component) OnChange(callback func(value string)) {
+	component.reference.Set("onchange", js.FuncOf(func(this js.Value, args []js.Value) interface{} {
+		callback(args[0].Get("target").Get("value").String())
 		return nil
 	}))
 }

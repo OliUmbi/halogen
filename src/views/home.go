@@ -26,8 +26,14 @@ func Home() {
 		text.SetText("yeet")
 	})
 
+	input := components.Create("input")
+	input.OnChange(func(value string) {
+		text.SetText(value)
+	})
+
 	root.AppendChild(container)
 	root.AppendChild(button2)
+	root.AppendChild(input)
 
 	container.AppendChild(text)
 	container.AppendChild(button)

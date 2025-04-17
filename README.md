@@ -2,6 +2,10 @@
 It is very REACTive
 
 ## build
+```
+export GOOS=js
+export GOARCH=wasm
+```
 
 (in src folder)
 ```
