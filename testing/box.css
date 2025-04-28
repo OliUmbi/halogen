@@ -1,3 +1,83 @@
 .box-background-red {
   background-color: var(--red);
 }
+
+.box {
+  container-type: inline-size;
+  contain: layout style;
+  width: 100%;
+  height: 100px;
+  overflow: auto;
+  resize: both;
+  background-color: var(--orange-6);
+
+  @media (width <= 20rem) {
+    background-color: lightblue;
+  }
+}
+
+
+
+.background-color-red-1 {
+  background-color: var(--red-1);
+}
+
+.hover-background-color-red-1 {
+  &:hover {
+    background-color: var(--red-1);
+  }
+}
+
+.active-background-color-red-1 {
+  &:active {
+    background-color: var(--red-1);
+  }
+}
+
+.focus-background-color-red-1 {
+  &:focus {
+    background-color: var(--red-1);
+  }
+}
+
+.required-background-color-red-1 {
+  &:required {
+    background-color: var(--red-1);
+  }
+}
+
+.disabled-background-color-red-1 {
+  &:disabled {
+    background-color: var(--red-1);
+  }
+}
+
+.xs-background-color-red-1 {
+  @media (width <= 20rem) {
+    background-color: var(--red-1);
+  }
+}
+
+.s-background-color-red-1 {
+  @media (width <= 40rem) {
+    background-color: var(--red-1);
+  }
+}
+
+.m-background-color-red-1 {
+  @media (width <= 60rem) {
+    background-color: var(--red-1);
+  }
+}
+
+.l-background-color-red-1 {
+  @media (width <= 80rem) {
+    background-color: var(--red-1);
+  }
+}
+
+.xl-background-color-red-1 {
+  @media (width <= 100rem) {
+    background-color: var(--red-1);
+  }
+}

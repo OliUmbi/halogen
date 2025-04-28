@@ -94,4 +94,6 @@ go build -o yeet.wasm ./main.go
 
 - hover
 - active
-- 
+- focus
+- required
+- disabled
