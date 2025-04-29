@@ -1,0 +1,97 @@
+{
+  "colors": [
+    {"name": "", "value": ""}
+  ],
+  "breakpoints": [
+    {"name": "xl", "value": "100rem"},
+    {"name": "l", "value": "80rem"},
+    {"name": "m", "value": "60rem"},
+    {"name": "s", "value": "40rem"},
+    {"name": "xs", "value": "20rem"}
+  ],
+  "pseudos": [
+    {"name": "hover", "value": "hover"},
+    {"name": "click", "value": "active"},
+    {"name": "focus", "value": "focus"}
+  ],
+  "attributes": [
+    {
+      "name": "w",
+      "variants": [
+        {"name": "hug", "value": "width:fit-content;"},
+        {"name": "full", "value": "width:100%;"},
+        {"name": "0", "value": "width:0rem;"},
+        {"name": "0-25", "value": "width:0.25rem;"},
+        {"name": "0-5", "value": "width:0.5rem;"},
+        {"name": "1", "value": "width:1rem;"},
+        {"name": "2", "value": "width:2rem;"},
+        {"name": "4", "value": "width:4rem;"},
+        {"name": "8", "value": "width:8rem;"},
+        {"name": "16", "value": "width:16rem;"}
+      ]
+    },
+    {
+      "name": "w-max",
+      "variants": [
+        {"name": "none", "value": "max-width:none;"},
+        {"name": "xl", "value": "max-width:100rem;"},
+        {"name": "l", "value": "max-width:80rem;"},
+        {"name": "m", "value": "max-width:60rem;"},
+        {"name": "s", "value": "max-width:40rem;"},
+        {"name": "xs", "value": "max-width:20rem;"}
+      ]
+    },
+    {
+      "name": "h",
+      "variants": [
+        {"name": "hug", "value": "height:fit-content;"},
+        {"name": "full", "value": "height:100%;"},
+        {"name": "0", "value": "height:0rem;"},
+        {"name": "0-25", "value": "height:0.25rem;"},
+        {"name": "0-5", "value": "height:0.5rem;"},
+        {"name": "1", "value": "height:1rem;"},
+        {"name": "2", "value": "height:2rem;"},
+        {"name": "4", "value": "height:4rem;"},
+        {"name": "8", "value": "height:8rem;"},
+        {"name": "16", "value": "height:16rem;"}
+      ]
+    },
+    {
+      "name": "h-max",
+      "variants": [
+        {"name": "none", "value": "max-height:none;"},
+        {"name": "xl", "value": "max-height:100rem;"},
+        {"name": "l", "value": "max-height:80rem;"},
+        {"name": "m", "value": "max-height:60rem;"},
+        {"name": "s", "value": "max-height:40rem;"},
+        {"name": "xs", "value": "max-height:20rem;"}
+      ]
+    },
+    {
+      "name": "pad-tb",
+      "variants": [
+        {"name": "0", "value": "padding-top:0rem;padding-bottom:0rem;"},
+        {"name": "0-25", "value": "padding-top:0.25rem;padding-bottom:0.25rem;"},
+        {"name": "0-5", "value": "padding-top:0.5rem;padding-bottom:0.5rem;"},
+        {"name": "1", "value": "padding-top:1rem;padding-bottom:1rem;"},
+        {"name": "2", "value": "padding-top:2rem;padding-bottom:2rem;"},
+        {"name": "4", "value": "padding-top:4rem;padding-bottom:4rem;"},
+        {"name": "8", "value": "padding-top:8rem;padding-bottom:8rem;"},
+        {"name": "16", "value": "padding-top:16rem;padding-bottom:16rem;"}
+      ]
+    }
+    {
+      "name": "pad-lr",
+      "variants": [
+        {"name": "0", "value": "padding-left:0rem;padding-right:0rem;"},
+        {"name": "0-25", "value": "padding-left:0.25rem;padding-right:0.25rem;"},
+        {"name": "0-5", "value": "padding-left:0.5rem;padding-right:0.5rem;"},
+        {"name": "1", "value": "padding-left:1rem;padding-right:1rem;"},
+        {"name": "2", "value": "padding-left:2rem;padding-right:2rem;"},
+        {"name": "4", "value": "padding-left:4rem;padding-right:4rem;"},
+        {"name": "8", "value": "padding-left:8rem;padding-right:8rem;"},
+        {"name": "16", "value": "padding-left:16rem;padding-right:16rem;"}
+      ]
+    }
+  ]
+}
