@@ -56,6 +56,7 @@ func main() {
 
 	for _, attribute := range style.Attributes {
 		for _, variant := range attribute.Variants {
+			// todo merge together with pseudos
 			results = append(results, "." + attribute.Name + "-" + variant.Name + "{" + variant.Value + "}")
 
 			for _, breakpoint := range style.Breakpoints {
@@ -69,6 +70,8 @@ func main() {
 	}
 
 	fmt.Println(utf8.RuneCountInString(strings.Join(results, "")))
+
+	os.WriteFile("./output.css", []byte(strings.Join(results, "")), 0644)
 
 }
 

@@ -89,11 +89,110 @@ go build -o yeet.wasm ./main.go
 - interaction
   - selection
   - cursor
+  - user select
+  - pointer events
 - border
 - outline
+- effects?
+  - blur
+- transform?
+  - skew
+  - scale
+  - rotate
 
 - hover
 - active
 - focus
 - required
 - disabled
+
+# done
+- width
+- height
+- padding
+- margin
+
+# naming
+- aln = align?
+- bkg = background?
+- brd = border?
+- flx = flex?
+- gap = gap?
+- grd = grid?
+- hgt = height
+- jst = justify?
+- mar = margin
+- ovr = overflow?
+- pad = padding
+- rot = rotation?
+- txt = text/font?
+- wdt = width
+- wrp = wrap?
+- shd = shadow? 
+
+# groups
+- bkg
+  - color
+- brd
+  - color
+  - width
+  - style
+- otl
+  - color
+  - width
+  - style
+  - margin
+- flx
+  - direction
+  - wrap
+- grd
+  - columns
+  - rows
+- txt
+  - color
+  - weight
+  - family
+  - height
+  - decoration
+- lyt
+  - span ? (maybe in grid)
+  - overflow
+  - position
+  - left, right, top, bottom
+  - aspect
+- animations
+  - transitions
+
+
+- wth
+  - max
+- hgt
+  - max
+- pad
+  - top
+  - btm
+  - lft
+  - rgt
+  - top-btm
+  - lft-rgt
+- mar
+  - top
+  - btm
+  - lft
+  - rgt
+  - top-btm
+  - lft-rgt
+- jus
+- aln
+- gap
+  - row
+  - col
+- dir
+- wrp
+- rad
+  - top
+  - btm
+  - lft
+  - rgt
+
+
