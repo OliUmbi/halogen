@@ -84,3 +84,22 @@
     background-color: var(--red-1);
   }
 }
+
+.rad-br-2,.rad-br-2\:hvr:hover,.rad-br-2\:clk:active,.rad-br-2-foc:focus{border-bottom-right-radius:2rem;}.rad-br-2-xl{@media(width<=100rem){border-bottom-right-radius:2rem;}}.rad-br-2-l{@media(width<=80rem){border-bottom-right-radius:2rem;}}.rad-br-2-m{@media(width<=60rem){border-bottom-right-radius:2rem;}}.rad-br-2-s{@media(width<=40rem){border-bottom-right-radius:2rem;}}.rad-br-2-xs{@media(width<=20rem){border-bottom-right-radius:2rem;}}
+
+.wid-hug,.wid-hug\:hvr:hover,.wid-hug\:clk:active,.wid-hug\:foc:focus{width:fit-content;}.wid-hug\:xl{@media(width<=100rem){width:fit-content;}}.wid-hug\:l{@media(width<=80rem){width:fit-content;}}.wid-hug\:m{@media(width<=60rem){width:fit-content;}}.wid-hug\:s{@media(width<=40rem){width:fit-content;}}.wid-hug\:xs{@media(width<=20rem){width:fit-content;}}
+
+.wid-\.25,
+.wid-0\.25\:hvr:hover,
+.wid-0\.25\:clk:active,
+.wid-0\.25\:foc:focus {
+  width: 0.25rem;
+}
+
+
+.hgt\=2,
+.hgt\=2\:hvr:hover,
+.hgt\=2\:clk:active,
+.hgt\=2\:foc:focus {
+  height: 2rem;
+}

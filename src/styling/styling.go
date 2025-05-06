@@ -42,7 +42,7 @@ type style struct {
 
 func main() {
 
-	data, err := os.ReadFile("./definitions.json")
+	var data, err = os.ReadFile("./definitions.json")
 	if err != nil {
 			panic(err)
 	}
@@ -53,20 +53,29 @@ func main() {
 	}
 
 	var results []string
+	var breakpoints map[string][]string = map[string][]string{}
 
 	for _, attribute := range style.Attributes {
 		for _, variant := range attribute.Variants {
-			// todo merge together with pseudos
-			results = append(results, "." + attribute.Name + "-" + variant.Name + "{" + variant.Value + "}")
+
+			var classes []string
+			classes = append(classes, "." + attribute.Name + "\\=" + variant.Name)
+			
+			for _, pseudo := range style.Pseudos {
+				classes = append(classes, "." + attribute.Name + "\\:" + pseudo.Name + "\\=" + variant.Name + ":" + pseudo.Value)
+			}
+
+			results = append(results, strings.Join(classes, ",") + "{" + variant.Value + "}")
 
 			for _, breakpoint := range style.Breakpoints {
-				results = append(results, "." + attribute.Name + "-" + variant.Name + "-" + breakpoint.Name + "{@media(width<=" + breakpoint.Value + "){" + variant.Value + "}}")
-			}
-
-			for _, pseudo := range style.Pseudos {
-				results = append(results, "." + attribute.Name + "-" + variant.Name + "-" + pseudo.Name + ":" + pseudo.Value + "{" + variant.Value + "}")
+				
+				breakpoints[breakpoint.Value] = append(breakpoints[breakpoint.Value], "." + attribute.Name + "\\:" + breakpoint.Name + "\\=" + variant.Name + "{" + variant.Value + "}")
 			}
 		}
+	}
+
+	for value, data := range breakpoints {
+		results = append(results, "@media(width<=" + value + "){" + strings.Join(data, "") + "}")
 	}
 
 	fmt.Println(utf8.RuneCountInString(strings.Join(results, "")))

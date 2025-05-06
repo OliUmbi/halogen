@@ -169,19 +169,19 @@ go build -o yeet.wasm ./main.go
 - hgt
   - max
 - pad
-  - top
-  - btm
-  - lft
-  - rgt
-  - top-btm
-  - lft-rgt
+  - t
+  - b
+  - l
+  - r
+  - tb
+  - lr
 - mar
-  - top
-  - btm
-  - lft
-  - rgt
-  - top-btm
-  - lft-rgt
+  - t
+  - b
+  - l
+  - r
+  - tb
+  - lr
 - jus
 - aln
 - gap
@@ -190,9 +190,10 @@ go build -o yeet.wasm ./main.go
 - dir
 - wrp
 - rad
-  - top
-  - btm
-  - lft
-  - rgt
+  - tl
+  - tr
+  - bl
+  - br
+
 
 
