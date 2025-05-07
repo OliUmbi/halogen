@@ -135,16 +135,8 @@ go build -o yeet.wasm ./main.go
   - color
 - brd
   - color
-  - width
-  - style
 - otl
   - color
-  - width
-  - style
-  - margin
-- flx
-  - direction
-  - wrap
 - grd
   - columns
   - rows
@@ -162,38 +154,47 @@ go build -o yeet.wasm ./main.go
   - aspect
 - animations
   - transitions
+- position
+- top
+- left
+- bottom
+- right
+
+modals, popup, etc.
 
 
-- wth
+- width
   - max
-- hgt
+- height
   - max
-- pad
+- padding
   - t
   - b
   - l
   - r
   - tb
   - lr
-- mar
+- margin
   - t
   - b
   - l
   - r
   - tb
   - lr
-- jus
-- aln
+- justify
+- align
 - gap
   - row
   - col
-- dir
-- wrp
-- rad
+- direction
+- wrap
+- radius
   - tl
   - tr
   - bl
   - br
-
+- border
+- outline
+  - offset
 
 

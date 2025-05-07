@@ -1,8 +1,8 @@
 *, :before, :after {
   accent-color: transparent;
-  align-content: start;
-  align-items: start;
-  align-self: start;
+  align-content: auto;
+  align-items: auto;
+  align-self: auto;
   alignment-baseline: baseline;
   anchor-name: none;
   anchor-scope: none;
@@ -176,9 +176,9 @@
   inset-inline-start: auto;
   interpolate-size: numeric-only;
   isolation: auto;
-  justify-content: start;
-  justify-items: start;
-  justify-self: start;
+  justify-content: auto;
+  justify-items: auto;
+  justify-self: auto;
   left: auto;
   letter-spacing: normal;
   lighting-color: transparent;
@@ -385,8 +385,12 @@ head, script {
 /* todo should not be here */ 
 html {
   overflow-y: auto;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
   flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
