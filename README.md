@@ -147,11 +147,9 @@ go build -o yeet.wasm ./main.go
   - height
   - decoration
 - lyt
-  - span ? (maybe in grid)
   - overflow
   - position
   - left, right, top, bottom
-  - aspect
 - animations
   - transitions
 - position
@@ -181,13 +179,22 @@ modals, popup, etc.
   - r
   - tb
   - lr
+- grid
+  - col
+  - row
+- direction
 - justify
 - align
 - gap
   - row
   - col
-- direction
 - wrap
+- span
+  - row
+  - col
+- scroll
+  - x
+  - y
 - radius
   - tl
   - tr
@@ -196,5 +203,11 @@ modals, popup, etc.
 - border
 - outline
   - offset
+- aspect
+
+
+- text
+  - selectable (enable pointer events)
+
 
 
