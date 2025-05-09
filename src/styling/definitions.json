@@ -552,7 +552,7 @@
     },
     {
       "name": "border-color",
-      "breakable": true,
+      "breakable": false,
       "pseudoable": true,
       "variants": [
         {"name": "black", "value": "border-color:var(--black);"},
@@ -583,7 +583,7 @@
     },
     {
       "name": "border-style",
-      "breakable": false,
+      "breakable": true,
       "pseudoable": true,
       "variants": [
         {"name": "none", "value": "border-style:none;"},
@@ -593,7 +593,7 @@
     },
     {
       "name": "outline-color",
-      "breakable": true,
+      "breakable": false,
       "pseudoable": true,
       "variants": [
         {"name": "black", "value": "outline-color:var(--black);"},

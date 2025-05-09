@@ -61,7 +61,7 @@ func main() {
 	for _, color := range style.Colors {
 		results = append(results, "--"+color.Name+":"+color.Value+";")
 	}
-	results = append(results, "}")
+	results = append(results, "}\n")
 
 	for _, attribute := range style.Attributes {
 		for _, variant := range attribute.Variants {
@@ -86,7 +86,7 @@ func main() {
 	}
 
 	for value, data := range breakpoints {
-		results = append(results, "@media(width<="+value+"){"+strings.Join(data, "")+"}")
+		results = append(results, "\n@media(width<="+value+"){"+strings.Join(data, "")+"}")
 	}
 
 	fmt.Println(utf8.RuneCountInString(strings.Join(results, "")))

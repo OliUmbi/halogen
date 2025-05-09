@@ -141,6 +141,8 @@ shadow
 caret
 scrollbar
 
+consider additional colors for hovering
+
 
 - width
   - max
