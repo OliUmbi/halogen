@@ -131,34 +131,15 @@ go build -o yeet.wasm ./main.go
 - shd = shadow? 
 
 # groups
-- bkg
-  - color
-- brd
-  - color
-- otl
-  - color
-- grd
-  - columns
-  - rows
-- txt
-  - color
-  - weight
-  - family
-  - height
-  - decoration
-- lyt
-  - overflow
-  - position
-  - left, right, top, bottom
 - animations
   - transitions
-- position
-- top
-- left
-- bottom
-- right
 
 modals, popup, etc.
+opacity
+blur / glass effects
+shadow
+caret
+scrollbar
 
 
 - width
@@ -201,13 +182,28 @@ modals, popup, etc.
   - bl
   - br
 - border
+  - color !!!
+  - width
+  - style
 - outline
+  - color !!!
+  - width
+  - style
   - offset
 - aspect
-
-
+- interact
 - text
-  - selectable (enable pointer events)
-
-
+  - size
+  - color
+  - height
+  - weight
+  - select
+  - type
+  - decoration
+    - color
+    - position
+    - style
+- background
+  - color
+- position
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="width=full height=full scroll-y=always">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,31 @@
   <link rel="stylesheet" href="../../testing/base.css"/>
   <link rel="stylesheet" href="./output.css"/>
 </head>
-<body>
-  <div class="width=full height=full direction=col align=center padding=4">
-    <div class="width-max=m width=full grid-col=3a gap=1 justify=end">
-        <p class="">id</p>
-        <p class="width=full">description</p>
-        <p class="width=8">status</p>
-        <p class="span-row=2">1</p>
-        <p class="aspect=square">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae magni dolor aspernatur beatae blanditiis neque labore dolores atque amet, illo eligendi! Perspiciatis, consectetur est quia inventore officia omnis deleniti hic.</p>
-        <p>all good</p>
-        <p>2</p>
-        <p>Lorem ipsum dolor sit, amet  consectetur est quia inventore officia omnis deleniti hic.</p>
-        <p>errrror</p>
+<body class="width=full height=full background-color=black">
+  <div class="width=full height=full align=center justify=center padding=4 gap=4">
+    <div class="width-max=s width=full padding=2 radius=.5 border-color=black-alt border-style=solid border-width=.01 direction=col gap=2">
+      <div class="direction=col">
+        <p class="text-color=white text-size=1.25 text-type=regular text-weight=bold text-height=1.5">Login</p>
+        <p class="text-color=white-alt text-size=.875 text-height=1.5 text-type=regular">Enter your email below to login to your account</p>
+      </div>
+      <div class="direction=col gap=.5 width=full">
+        <p class="text-color=white text-type=regular text-size=.875 text-height=1.5">E-Mail</p>
+        <input class="border-color=black-alt border-width=.01 border-style=solid padding-lr=1 padding-tb=.5 width=full radius=.25 interact=always text-color=white text-type=regular" placeholder="user@example.tld"/>
+      </div>
+      <div class="direction=col gap=.5 width=full">
+        <div class="direction=row gap=1 justify=between width=full">
+          <p class="text-color=white text-type=regular text-size=.875 text-height=1.5">Password</p>
+          <a class="text-color=white text-type=regular text-size=.875 text-height=1.5 text-decoration-position:hvr=under text-decoration-style:hvr=solid text-decoration-color:hvr=white interact=always">Forgot your password?</a>
+        </div>
+        <input class="border-color=black-alt border-width=.01 border-style=solid padding-lr=1 padding-tb=.5 width=full radius=.25 interact=always text-color=white text-type=regular " placeholder="user@example.tld"/>
+      </div>
+      <div class="direction=col width=full gap=1">
+        <button class="border-color=black-alt border-width=.01 border-style=solid text-color=black background-color=yellow background-color:hvr=white-alt interact=always text-size=.875 text-height=1.5 text-type=regular width=full justify=center text-weight=bold padding-lr=1 padding-tb=.5 radius=.25">Login</button>
+        <button class="border-color=black-alt border-width=.01 border-style=solid text-color=white background-color=black background-color:hvr=black-alt interact=always text-size=.875 text-height=1.5 text-type=regular width=full justify=center text-weight=bold padding-lr=1 padding-tb=.5 radius=.25">Login with Google</button>
+      </div>
+      <div class="gap=.5">
+        <p class="text-color=white-alt text-type=regular text-height=1.5">Don't have an account?</p>
+        <a class="text-color=white text-type=regular text-height=1.5 text-decoration-position:hvr=under text-decoration-style:hvr=solid text-decoration-color:hvr=white interact=always">Sign up</a>
       </div>
     </div>
   </div>

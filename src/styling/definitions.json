@@ -1,6 +1,17 @@
 {
   "colors": [
-    {"name": "", "value": ""}
+    {"name": "black", "value": "hsl(0 0 8)"},
+    {"name": "black-alt", "value": "hsl(0 0 24)"},
+    {"name": "white", "value": "hsl(0 0 98)"},
+    {"name": "white-alt", "value": "hsl(0 0 68)"},
+    {"name": "red", "value": "hsl(0 60 50)"},
+    {"name": "red-alt", "value": "hsl(0 40 30)"},
+    {"name": "yellow", "value": "hsl(60 70 50)"},
+    {"name": "yellow-alt", "value": "hsl(60 50 30)"},
+    {"name": "green", "value": "hsl(120 70 50)"},
+    {"name": "green-alt", "value": "hsl(120 50 30)"},
+    {"name": "blue", "value": "hsl(240 60 50)"},
+    {"name": "blue-alt", "value": "hsl(240 40 30)"}
   ],
   "breakpoints": [
     {"name": "xl", "value": "100rem"},
@@ -17,6 +28,8 @@
   "attributes": [
     {
       "name": "width",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "hug", "value": "width:fit-content;"},
         {"name": "full", "value": "width:100%;"},
@@ -36,6 +49,8 @@
     },
     {
       "name": "width-max",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "none", "value": "max-width:none;"},
         {"name": "xl", "value": "max-width:100rem;"},
@@ -47,6 +62,8 @@
     },
     {
       "name": "height",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "hug", "value": "height:fit-content;"},
         {"name": "full", "value": "height:100%;"},
@@ -66,6 +83,8 @@
     },
     {
       "name": "height-max",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "none", "value": "max-height:none;"},
         {"name": "xl", "value": "max-height:100rem;"},
@@ -77,6 +96,8 @@
     },
     {
       "name": "padding",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding:0rem;"},
         {"name": "\\.25", "value": "padding:0.25rem;"},
@@ -90,6 +111,8 @@
     },
     {
       "name": "padding-t",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-top:0rem;"},
         {"name": "\\.25", "value": "padding-top:0.25rem;"},
@@ -103,6 +126,8 @@
     },
     {
       "name": "padding-b",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-bottom:0rem;"},
         {"name": "\\.25", "value": "padding-bottom:0.25rem;"},
@@ -116,6 +141,8 @@
     },
     {
       "name": "padding-l",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-left:0rem;"},
         {"name": "\\.25", "value": "padding-left:0.25rem;"},
@@ -129,6 +156,8 @@
     },
     {
       "name": "padding-r",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-right:0rem;"},
         {"name": "\\.25", "value": "padding-right:0.25rem;"},
@@ -142,6 +171,8 @@
     },
     {
       "name": "padding-tb",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-top:0rem;padding-bottom:0rem;"},
         {"name": "\\.25", "value": "padding-top:0.25rem;padding-bottom:0.25rem;"},
@@ -155,6 +186,8 @@
     },
     {
       "name": "padding-lr",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "padding-left:0rem;padding-right:0rem;"},
         {"name": "\\.25", "value": "padding-left:0.25rem;padding-right:0.25rem;"},
@@ -168,6 +201,8 @@
     },
     {
       "name": "margin",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin:0rem;"},
         {"name": "\\.25", "value": "margin:0.25rem;"},
@@ -181,6 +216,8 @@
     },
     {
       "name": "margin-t",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-top:0rem;"},
         {"name": "\\.25", "value": "margin-top:0.25rem;"},
@@ -194,6 +231,8 @@
     },
     {
       "name": "margin-b",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-bottom:0rem;"},
         {"name": "\\.25", "value": "margin-bottom:0.25rem;"},
@@ -207,6 +246,8 @@
     },
     {
       "name": "margin-l",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-left:0rem;"},
         {"name": "\\.25", "value": "margin-left:0.25rem;"},
@@ -220,6 +261,8 @@
     },
     {
       "name": "margin-r",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-right:0rem;"},
         {"name": "\\.25", "value": "margin-right:0.25rem;"},
@@ -233,6 +276,8 @@
     },
     {
       "name": "margin-tb",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-top:0rem;margin-bottom:0rem;"},
         {"name": "\\.25", "value": "margin-top:0.25rem;margin-bottom:0.25rem;"},
@@ -246,6 +291,8 @@
     },
     {
       "name": "margin-lr",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "margin-left:0rem;margin-right:0rem;"},
         {"name": "\\.25", "value": "margin-left:0.25rem;margin-right:0.25rem;"},
@@ -259,6 +306,8 @@
     },
     {
       "name": "grid-col",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "1f", "value": "display:grid;grid-template-columns:repeat(1,1fr);"},
         {"name": "2f", "value": "display:grid;grid-template-columns:repeat(2,1fr);"},
@@ -280,6 +329,8 @@
     },
     {
       "name": "grid-row",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "1f", "value": "display:grid;grid-template-rows:repeat(1,1fr);"},
         {"name": "2f", "value": "display:grid;grid-template-rows:repeat(2,1fr);"},
@@ -301,6 +352,8 @@
     },
     {
       "name": "direction",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "row", "value": "flex-direction:row;"},
         {"name": "col", "value": "flex-direction:column;"}
@@ -308,6 +361,8 @@
     },
     {
       "name": "justify",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "start", "value": "justify-content:start;"},
         {"name": "center", "value": "justify-content:center;"},
@@ -319,6 +374,8 @@
     },
     {
       "name": "align",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "start", "value": "align-items:start;"},
         {"name": "center", "value": "align-items:center;"},
@@ -330,6 +387,8 @@
     },
     {
       "name": "gap",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "gap:0rem;"},
         {"name": "\\.25", "value": "gap:0.25rem;"},
@@ -343,6 +402,8 @@
     },
     {
       "name": "gap-row",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "row-gap:0rem;"},
         {"name": "\\.25", "value": "row-gap:0.25rem;"},
@@ -356,6 +417,8 @@
     },
     {
       "name": "gap-col",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "column-gap:0rem;"},
         {"name": "\\.25", "value": "column-gap:0.25rem;"},
@@ -369,6 +432,8 @@
     },
     {
       "name": "wrap",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "always", "value": "flex-wrap:wrap;"},
         {"name": "never", "value": "flex-wrap:nowrap;"}
@@ -376,6 +441,8 @@
     },
     {
       "name": "span-col",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "1", "value": "grid-column:span 1;"},
         {"name": "2", "value": "grid-column:span 2;"},
@@ -389,6 +456,8 @@
     },
     {
       "name": "span-row",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "1", "value": "grid-row:span 1;"},
         {"name": "2", "value": "grid-row:span 2;"},
@@ -402,6 +471,8 @@
     },
     {
       "name": "scroll-y",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "never", "value": "overflow-y:clip;"},
         {"name": "always", "value": "overflow-y:scroll;"},
@@ -410,6 +481,8 @@
     },
     {
       "name": "scroll-x",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "never", "value": "overflow-x:clip;"},
         {"name": "always", "value": "overflow-x:scroll;"},
@@ -418,6 +491,8 @@
     },
     {
       "name": "radius",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "full", "value": "border-radius:1000rem;"},
         {"name": "0", "value": "border-radius:0rem;"},
@@ -429,6 +504,8 @@
     },
     {
       "name": "radius-tl",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "border-top-left-radius:0rem;"},
         {"name": "\\.25", "value": "border-top-left-radius:0.25rem;"},
@@ -439,6 +516,8 @@
     },
     {
       "name": "radius-tr",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "border-top-right-radius:0rem;"},
         {"name": "\\.25", "value": "border-top-right-radius:0.25rem;"},
@@ -449,6 +528,8 @@
     },
     {
       "name": "radius-bl",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "border-bottom-left-radius:0rem;"},
         {"name": "\\.25", "value": "border-bottom-left-radius:0.25rem;"},
@@ -459,6 +540,8 @@
     },
     {
       "name": "radius-br",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "0", "value": "border-bottom-right-radius:0rem;"},
         {"name": "\\.25", "value": "border-bottom-right-radius:0.25rem;"},
@@ -468,24 +551,81 @@
       ]
     },
     {
-      "name": "border",
+      "name": "border-color",
+      "breakable": true,
+      "pseudoable": true,
+      "variants": [
+        {"name": "black", "value": "border-color:var(--black);"},
+        {"name": "black-alt", "value": "border-color:var(--black-alt);"},
+        {"name": "white", "value": "border-color:var(--white);"},
+        {"name": "white-alt", "value": "border-color:var(--white-alt);"},
+        {"name": "red", "value": "border-color:var(--red);"},
+        {"name": "red-alt", "value": "border-color:var(--red-alt);"},
+        {"name": "yellow", "value": "border-color:var(--yellow);"},
+        {"name": "yellow-alt", "value": "border-color:var(--yellow-alt);"},
+        {"name": "green", "value": "border-color:var(--green);"},
+        {"name": "green-alt", "value": "border-color:var(--green-alt);"},
+        {"name": "blue", "value": "border-color:var(--blue);"},
+        {"name": "blue-alt", "value": "border-color:var(--blue-alt);"}
+      ]
+    },
+    {
+      "name": "border-width",
+      "breakable": false,
+      "pseudoable": true,
       "variants": [
         {"name": "0", "value": "border-width:0rem;"},
+        {"name": "\\.01", "value": "border-width:0.0625rem;"},
         {"name": "\\.125", "value": "border-width:0.125rem;"},
         {"name": "\\.25", "value": "border-width:0.25rem;"},
-        {"name": "\\.5", "value": "border-width:0.5rem;"},
+        {"name": "\\.5", "value": "border-width:0.5rem;"}
+      ]
+    },
+    {
+      "name": "border-style",
+      "breakable": false,
+      "pseudoable": true,
+      "variants": [
         {"name": "none", "value": "border-style:none;"},
         {"name": "solid", "value": "border-style:solid;"},
         {"name": "dashed", "value": "border-style:dashed;"}
       ]
     },
     {
-      "name": "outline",
+      "name": "outline-color",
+      "breakable": true,
+      "pseudoable": true,
+      "variants": [
+        {"name": "black", "value": "outline-color:var(--black);"},
+        {"name": "black-alt", "value": "outline-color:var(--black-alt);"},
+        {"name": "white", "value": "outline-color:var(--white);"},
+        {"name": "white-alt", "value": "outline-color:var(--white-alt);"},
+        {"name": "red", "value": "outline-color:var(--red);"},
+        {"name": "red-alt", "value": "outline-color:var(--red-alt);"},
+        {"name": "yellow", "value": "outline-color:var(--yellow);"},
+        {"name": "yellow-alt", "value": "outline-color:var(--yellow-alt);"},
+        {"name": "green", "value": "outline-color:var(--green);"},
+        {"name": "green-alt", "value": "outline-color:var(--green-alt);"},
+        {"name": "blue", "value": "outline-color:var(--blue);"},
+        {"name": "blue-alt", "value": "outline-color:var(--blue-alt);"}
+      ]
+    },
+    {
+      "name": "outline-width",
+      "breakable": false,
+      "pseudoable": true,
       "variants": [
         {"name": "0", "value": "outline-width:0rem;"},
         {"name": "\\.125", "value": "outline-width:0.125rem;"},
         {"name": "\\.25", "value": "outline-width:0.25rem;"},
-        {"name": "\\.5", "value": "outline-width:0.5rem;"},
+        {"name": "\\.5", "value": "outline-width:0.5rem;"}
+      ]
+    },
+    {
+      "name": "outline-style",
+      "breakable": false,
+      "pseudoable": true,
+      "variants": [
         {"name": "none", "value": "outline-style:none;"},
         {"name": "solid", "value": "outline-style:solid;"},
         {"name": "dashed", "value": "outline-style:dashed;"}
@@ -493,6 +633,8 @@
     },
     {
       "name": "outline-offset",
+      "breakable": false,
+      "pseudoable": true,
       "variants": [
         {"name": "0", "value": "outline-offset:0rem;"},
         {"name": "\\.125", "value": "outline-offset:0.125rem;"},
@@ -502,6 +644,8 @@
     },
     {
       "name": "aspect",
+      "breakable": true,
+      "pseudoable": false,
       "variants": [
         {"name": "square", "value": "aspect-ratio:1/1;"},
         {"name": "golden", "value": "aspect-ratio:43/21;"},
@@ -511,9 +655,154 @@
     },
     {
       "name": "interact",
+      "breakable": false,
+      "pseudoable": false,
       "variants": [
         {"name": "never", "value": "pointer-events:none;"},
         {"name": "always", "value": "pointer-events:auto;"}
+      ]
+    },
+    {
+      "name": "text-color",
+      "breakable": true,
+      "pseudoable": true,
+      "variants": [
+        {"name": "black", "value": "color:var(--black);"},
+        {"name": "black-alt", "value": "color:var(--black-alt);"},
+        {"name": "white", "value": "color:var(--white);"},
+        {"name": "white-alt", "value": "color:var(--white-alt);"},
+        {"name": "red", "value": "color:var(--red);"},
+        {"name": "red-alt", "value": "color:var(--red-alt);"},
+        {"name": "yellow", "value": "color:var(--yellow);"},
+        {"name": "yellow-alt", "value": "color:var(--yellow-alt);"},
+        {"name": "green", "value": "color:var(--green);"},
+        {"name": "green-alt", "value": "color:var(--green-alt);"},
+        {"name": "blue", "value": "color:var(--blue);"},
+        {"name": "blue-alt", "value": "color:var(--blue-alt);"}
+      ]
+    },
+    {
+      "name": "text-size",
+      "breakable": true,
+      "pseudoable": false,
+      "variants": [
+        {"name": "\\.875", "value": "font-size:0.875rem;"},
+        {"name": "1", "value": "font-size:1rem;"},
+        {"name": "1\\.125", "value": "font-size:1.125rem;"},
+        {"name": "1\\.25", "value": "font-size:1.25rem;"},
+        {"name": "1\\.5", "value": "font-size:1.5rem;"},
+        {"name": "2", "value": "font-size:2rem;"},
+        {"name": "3", "value": "font-size:3rem;"}
+      ]
+    },
+    {
+      "name": "text-height",
+      "breakable": true,
+      "pseudoable": false,
+      "variants": [
+        {"name": "1", "value": "line-height:1;"},
+        {"name": "1\\.25", "value": "line-height:1.25;"},
+        {"name": "1\\.5", "value": "line-height:1.5;"},
+        {"name": "2", "value": "line-height:2;"}
+      ]
+    },
+    {
+      "name": "text-weight",
+      "breakable": true,
+      "pseudoable": false,
+      "variants": [
+        {"name": "light", "value": "font-weight:300;"},
+        {"name": "regular", "value": "font-weight:400;"},
+        {"name": "bold", "value": "font-weight:600;"}
+      ]
+    },
+    {
+      "name": "text-select",
+      "breakable": false,
+      "pseudoable": false,
+      "variants": [
+        {"name": "never", "value": "user-select:none;"},
+        {"name": "always", "value": "user-select:text;pointer-events:auto;"}
+      ]
+    },
+    {
+      "name": "text-type",
+      "breakable": false,
+      "pseudoable": false,
+      "variants": [
+        {"name": "regular", "value": "font-family:system-ui;"},
+        {"name": "mono", "value": "font-family:monospace;"}
+      ]
+    },
+    {
+      "name": "text-decoration-color",
+      "breakable": false,
+      "pseudoable": true,
+      "variants": [
+        {"name": "current", "value": "text-decoration-color:currentcolor;"},
+        {"name": "black", "value": "text-decoration-color:var(--black);"},
+        {"name": "black-alt", "value": "text-decoration-color:var(--black-alt);"},
+        {"name": "white", "value": "text-decoration-color:var(--white);"},
+        {"name": "white-alt", "value": "text-decoration-color:var(--white-alt);"},
+        {"name": "red", "value": "text-decoration-color:var(--red);"},
+        {"name": "red-alt", "value": "text-decoration-color:var(--red-alt);"},
+        {"name": "yellow", "value": "text-decoration-color:var(--yellow);"},
+        {"name": "yellow-alt", "value": "text-decoration-color:var(--yellow-alt);"},
+        {"name": "green", "value": "text-decoration-color:var(--green);"},
+        {"name": "green-alt", "value": "text-decoration-color:var(--green-alt);"},
+        {"name": "blue", "value": "text-decoration-color:var(--blue);"},
+        {"name": "blue-alt", "value": "text-decoration-color:var(--blue-alt);"}
+      ]
+    },
+    {
+      "name": "text-decoration-position",
+      "breakable": false,
+      "pseudoable": true,
+      "variants": [
+        {"name": "none", "value": "text-decoration-line:none;"},
+        {"name": "under", "value": "text-decoration-line:underline;"},
+        {"name": "over", "value": "text-decoration-line:overline;"},
+        {"name": "through", "value": "text-decoration-line:line-through;"}
+      ]
+    },
+    {
+      "name": "text-decoration-style",
+      "breakable": false,
+      "pseudoable": true,
+      "variants": [
+        {"name": "none", "value": "text-decoration-style:none;"},
+        {"name": "solid", "value": "text-decoration-style:solid;"},
+        {"name": "dashed", "value": "text-decoration-style:dashed;"},
+        {"name": "wavy", "value": "text-decoration-style:wavy;"}
+      ]
+    },
+    {
+      "name": "position",
+      "breakable": true,
+      "pseudoable": false,
+      "variants": [
+        {"name": "regular", "value": "position:static;"},
+        {"name": "fixed", "value": "position:fixed;top:0rem;left:0rem;"},
+        {"name": "sticky", "value": "position:sticky;top:0rem;left:0rem;"}
+      ]
+    },
+    {
+      "name": "background-color",
+      "breakable": true,
+      "pseudoable": true,
+      "variants": [
+        {"name": "black", "value": "background-color:var(--black);"},
+        {"name": "black-alt", "value": "background-color:var(--black-alt);"},
+        {"name": "white", "value": "background-color:var(--white);"},
+        {"name": "white-alt", "value": "background-color:var(--white-alt);"},
+        {"name": "red", "value": "background-color:var(--red);"},
+        {"name": "red-alt", "value": "background-color:var(--red-alt);"},
+        {"name": "yellow", "value": "background-color:var(--yellow);"},
+        {"name": "yellow-alt", "value": "background-color:var(--yellow-alt);"},
+        {"name": "green", "value": "background-color:var(--green);"},
+        {"name": "green-alt", "value": "background-color:var(--green-alt);"},
+        {"name": "blue", "value": "background-color:var(--blue);"},
+        {"name": "blue-alt", "value": "background-color:var(--blue-alt);"}
       ]
     }
   ]

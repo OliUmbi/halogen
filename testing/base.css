@@ -80,12 +80,12 @@
   break-before: auto;
   break-inside: auto;
   caption-side: top;
-  caret-color: hsl(0, 0%, 0%);
+  caret-color: white;
   clear: none;
   clip: auto;
   clip-path: none;
   clip-rule: nonzero;
-  color: hsl(0, 0%, 0%);
+  color: white;
   color-interpolation: srgb;
   color-interpolation-filters: srgb;
   color-scheme: normal;
@@ -328,7 +328,7 @@
   text-decoration-line: none;
   text-decoration-skip-ink: auto;
   text-decoration-style: solid;
-  text-decoration-thickness: 0rem;
+  text-decoration-thickness: from-font;
   text-emphasis-color: transparent;
   text-emphasis-position: over;
   text-emphasis-style: none;
@@ -340,7 +340,7 @@
   text-size-adjust: none;
   text-spacing-trim: normal;
   text-transform: none;
-  text-underline-offset: 0rem;
+  text-underline-offset: auto;
   text-underline-position: auto;
   text-wrap-mode: wrap;
   text-wrap-style: pretty;
@@ -380,17 +380,4 @@
 
 head, script {
   display: none;
-}
-
-/* todo should not be here */ 
-html {
-  overflow-y: auto;
-  width: 100%;
-  min-height: 100%;
-}
-
-body {
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
 }

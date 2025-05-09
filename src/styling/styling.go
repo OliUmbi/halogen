@@ -29,8 +29,10 @@ type variant struct {
 }
 
 type attribute struct {
-	Name     string
-	Variants []variant
+	Name       string
+	Breakable  bool
+	Pseudoable bool
+	Variants   []variant
 }
 
 type style struct {
@@ -55,21 +57,30 @@ func main() {
 	var results []string
 	var breakpoints map[string][]string = map[string][]string{}
 
+	results = append(results, ":root{")
+	for _, color := range style.Colors {
+		results = append(results, "--"+color.Name+":"+color.Value+";")
+	}
+	results = append(results, "}")
+
 	for _, attribute := range style.Attributes {
 		for _, variant := range attribute.Variants {
 
 			var classes []string
 			classes = append(classes, "."+attribute.Name+"\\="+variant.Name)
 
-			for _, pseudo := range style.Pseudos {
-				classes = append(classes, "."+attribute.Name+"\\:"+pseudo.Name+"\\="+variant.Name+":"+pseudo.Value)
+			if attribute.Pseudoable {
+				for _, pseudo := range style.Pseudos {
+					classes = append(classes, "."+attribute.Name+"\\:"+pseudo.Name+"\\="+variant.Name+":"+pseudo.Value)
+				}
 			}
 
 			results = append(results, strings.Join(classes, ",")+"{"+variant.Value+"}")
 
-			for _, breakpoint := range style.Breakpoints {
-
-				breakpoints[breakpoint.Value] = append(breakpoints[breakpoint.Value], "."+attribute.Name+"\\:"+breakpoint.Name+"\\="+variant.Name+"{"+variant.Value+"}")
+			if attribute.Breakable {
+				for _, breakpoint := range style.Breakpoints {
+					breakpoints[breakpoint.Value] = append(breakpoints[breakpoint.Value], "."+attribute.Name+"\\:"+breakpoint.Name+"\\="+variant.Name+"{"+variant.Value+"}")
+				}
 			}
 		}
 	}
