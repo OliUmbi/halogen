@@ -9,7 +9,7 @@ export GOARCH=wasm
 
 (in src folder)
 ```
-go build -o yeet.wasm ./main.go  
+go build -o main.wasm ./main.go  
 ```
 
 ## ideas

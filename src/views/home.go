@@ -9,32 +9,32 @@ func Home() {
 	root := components.Root()
 
 	container := components.Create("div")
-
 	text := components.Create("p")
+	button := components.Create("button")
+	button2 := components.Create("button")
+	input := components.Create("input")
+
 	text.SetText("hello")
 
-	button := components.Create("button")
 	button.SetText("click")
-	button.OnClick(func() {
+	button.Click(func() {
 		text.SetText("bye")
-		container.Remove()
+		container.Unmount()
 	})
 
-	button2 := components.Create("button")
 	button2.SetText("click")
-	button2.OnClick(func() {
+	button2.Click(func() {
 		text.SetText("yeet")
 	})
 
-	input := components.Create("input")
-	input.OnChange(func(value string) {
+	input.Change(func(value string) {
 		text.SetText(value)
 	})
 
-	root.AppendChild(container)
-	root.AppendChild(button2)
-	root.AppendChild(input)
+	container.Child(text)
+	container.Child(button)
 
-	container.AppendChild(text)
-	container.AppendChild(button)
+	root.Child(container)
+	root.Child(button2)
+	root.Child(input)
 }
